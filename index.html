@@ -90,6 +90,7 @@
     <ul>
         <li><strong>Bereitstellung der App und Benutzerkonto:</strong> Verarbeitung Ihrer Registrierungsdaten (E-Mail-Adresse, Benutzer-ID) zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</li>
         <li><strong>KI-gestützte Dokumentenanalyse und Chat:</strong> Analyse Ihrer hochgeladenen Dokumente und Beantwortung Ihrer Fragen zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</li>
+        <li><strong>Spracheingabe (Voice-to-Text):</strong> Umwandlung Ihrer Spracheingaben in Text über Google Cloud Speech-to-Text zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</li>
         <li><strong>Verarbeitung sensibler Daten (Gesundheits- und Sozialdaten):</strong> Ausschließlich auf Basis Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO).</li>
         <li><strong>Analyse des Nutzungsverhaltens (Amplitude, Firebase):</strong> Auf Basis unseres berechtigten Interesses an der Verbesserung und Fehlerbehebung der App (Art. 6 Abs. 1 lit. f DSGVO). Unser berechtigtes Interesse liegt in der technischen Optimierung und Stabilität des Dienstes.</li>
         <li><strong>Absturzberichte (Firebase Crashlytics):</strong> Auf Basis unseres berechtigten Interesses an der Erkennung und Behebung technischer Fehler (Art. 6 Abs. 1 lit. f DSGVO).</li>
@@ -125,15 +126,28 @@
         <strong>Rechtsgrundlage für den Drittlandtransfer:</strong> Die Übermittlung personenbezogener Daten in die USA erfolgt auf Grundlage des <strong>Angemessenheitsbeschlusses der EU-Kommission gemäß dem EU-US Data Privacy Framework</strong> (DPF) nach Art. 45 DSGVO. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert. Ergänzend greifen die im <strong>Google Cloud Data Processing Addendum</strong> enthaltenen <strong>EU-Standardvertragsklauseln (Standard Contractual Clauses, SCCs)</strong> gemäß Art. 46 Abs. 2 lit. c DSGVO als zusätzliche Schutzmaßnahme.
     </p>
 
-    <h3>4.2. Umgang mit sensiblen Daten (Art. 9 DSGVO)</h3>
+    <h3>4.2. Spracheingabe (Google Speech-to-Text)</h3>
     <p>
-        Da Ihre hochgeladenen Dokumente (z.B. Bescheide, Atteste, Anwaltsschreiben) sensible Daten (Gesundheitsdaten, Sozialdaten, juristische Daten) enthalten können, verarbeiten wir diese nur auf Basis Ihrer <strong>ausdrücklichen Einwilligung</strong> (Art. 9 Abs. 2 lit. a DSGVO), die wir vor der Nutzung in der App abfragen.
+        Wenn Sie die Spracheingabe-Funktion der App nutzen, wird Ihre Audiodaten zur Umwandlung in Text an <strong>Google Cloud Speech-to-Text</strong> übermittelt. Die Verarbeitung erfolgt auf globalen Google-Servern und kann auch <strong>außerhalb der EU</strong> stattfinden (z.B. in den USA).
     </p>
+    <ul>
+        <li>Die Audiodaten werden ausschließlich für die Dauer der Spracherkennung verarbeitet und anschließend <strong>nicht dauerhaft bei Google gespeichert</strong>.</li>
+        <li>Google verwendet Ihre Sprachdaten vertragsgemäß <strong>nicht</strong> zur Verbesserung seiner Sprachmodelle.</li>
+        <li>Der daraus generierte Text wird anschließend wie eine normale Chat-Eingabe behandelt und kann sensible Daten enthalten (siehe Abschnitt 4.4).</li>
+    </ul>
     <p>
-        <strong>Hinweis zum Sozialdatenschutz:</strong> Daten aus Bescheiden von Jobcentern und Sozialleistungsträgern unterliegen dem besonderen Schutz des Sozialgeheimnisses gemäß § 35 SGB I und den Vorschriften des SGB X. Wir behandeln diese Daten mit besonderer Sorgfalt und verarbeiten sie ausschließlich im Rahmen der von Ihnen erteilten Einwilligung zum Zweck der Dokumentenanalyse.
+        <strong>Rechtsgrundlage:</strong> Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO). Für den Drittlandtransfer gelten dieselben Garantien wie in Abschnitt 4.1 (EU-US Data Privacy Framework + SCCs).
     </p>
 
-    <h3>4.3. Automatisierte Entscheidungsfindung und KI-Logik (Art. 13 Abs. 2 lit. f DSGVO)</h3>
+    <h3>4.3. Umgang mit sensiblen Daten (Art. 9 DSGVO)</h3>
+    <p>
+        Ihre Eingaben – ob durch <strong>hochgeladene Dokumente</strong>, <strong>Chat-Nachrichten</strong> oder <strong>Spracheingaben</strong> – können sensible Daten enthalten (Gesundheitsdaten, Sozialdaten, juristische Daten). Wir verarbeiten solche Daten ausschließlich auf Basis Ihrer <strong>ausdrücklichen Einwilligung</strong> (Art. 9 Abs. 2 lit. a DSGVO), die wir vor der Nutzung in der App abfragen.
+    </p>
+    <p>
+        <strong>Hinweis zum Sozialdatenschutz:</strong> Daten aus Bescheiden von Jobcentern und Sozialleistungsträgern unterliegen dem besonderen Schutz des Sozialgeheimnisses gemäß § 35 SGB I und den Vorschriften des SGB X. Wir behandeln diese Daten mit besonderer Sorgfalt und verarbeiten sie ausschließlich im Rahmen der von Ihnen erteilten Einwilligung zum Zweck der Dokumentenanalyse und Chat-Beratung.
+    </p>
+
+    <h3>4.4. Automatisierte Entscheidungsfindung und KI-Logik (Art. 13 Abs. 2 lit. f DSGVO)</h3>
     <p>
         Unsere App setzt KI-Modelle ein, um Ihre Dokumente zu analysieren und Ihnen Handlungsempfehlungen (z.B. Entwürfe für Widersprüche) bereitzustellen. Die KI analysiert dabei den Text Ihrer hochgeladenen Dokumente, gleicht die Inhalte mit relevanten Rechtsgrundlagen ab und generiert auf dieser Basis Textvorschläge.
     </p>
@@ -174,7 +188,7 @@
     <h2>7. Auftragsverarbeiter und Empfänger</h2>
     <p>Zur Erbringung unserer Dienste setzen wir folgende Auftragsverarbeiter ein, mit denen jeweils ein Vertrag zur Auftragsverarbeitung gemäß Art. 28 DSGVO geschlossen wurde:</p>
     <ul>
-        <li><strong>Google Cloud / Google LLC</strong> (USA, zertifiziert unter dem EU-US Data Privacy Framework) – Cloud-Hosting, Firebase, Vertex AI. Datenspeicherung in Deutschland (Hosting/Firebase), KI-Verarbeitung global (Vertex AI).</li>
+        <li><strong>Google Cloud / Google LLC</strong> (USA, zertifiziert unter dem EU-US Data Privacy Framework) – Cloud-Hosting, Firebase, Vertex AI, Speech-to-Text. Datenspeicherung in Deutschland (Hosting/Firebase), KI-Verarbeitung und Spracherkennung global (Vertex AI/Speech-to-Text).</li>
         <li><strong>Amplitude Inc.</strong> (EU-Rechenzentrum Frankfurt) – Nutzungsanalyse. Ausschließlich pseudonymisierte technische Daten, keine Inhalte.</li>
     </ul>
     <p>Eine darüber hinausgehende Weitergabe Ihrer personenbezogenen Daten an Dritte findet nicht statt, es sei denn, wir sind gesetzlich dazu verpflichtet.</p>
