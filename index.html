@@ -93,7 +93,8 @@
       <li><strong>Spracheingabe (Voice-to-Text):</strong> Umwandlung Ihrer Spracheingaben in Text über Google Cloud Speech-to-Text zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO).</li>
       <li><strong>Verarbeitung sensibler Daten (Gesundheits- und Sozialdaten):</strong> Ausschließlich auf Basis Ihrer ausdrücklichen Einwilligung (Art. 9 Abs. 2 lit. a DSGVO).</li>
       <li><strong>Analyse des Nutzungsverhaltens (Amplitude, Firebase Analytics):</strong> Auf Basis unseres berechtigten Interesses an der Verbesserung und Fehlerbehebung der App (Art. 6 Abs. 1 lit. f DSGVO). Unser berechtigtes Interesse liegt in der technischen Optimierung und Stabilität des Dienstes. Es werden ausschließlich pseudonyme technische Ereignisse verarbeitet, keine Inhalte Ihrer Dokumente oder Chats. Zu Ihrem Widerspruchsrecht siehe Punkt 6.4.</li>
-      <li><strong>Messung unserer Werbekampagnen (Google Ads):</strong> Ausschließlich auf Basis Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Ohne Ihre Zustimmung werden keine Daten zu Werbezwecken übermittelt. <strong>In der App wird keine Werbung angezeigt.</strong></li>
+      <li><strong>Verwaltung von Käufen und Abonnements (RevenueCat):</strong> Verarbeitung technischer Kundenkennungen, Kaufbelege und Abonnementdaten zur Bereitstellung gekaufter Funktionen und zur Vertragserfüllung (Art. 6 Abs. 1 lit. b DSGVO). Diese Verarbeitung ist von der freiwilligen Werbemessung getrennt.</li>
+      <li><strong>Messung unserer Werbekampagnen (Google Ads, Google Analytics und RevenueCat):</strong> Ausschließlich auf Basis Ihrer Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Mit Ihrer Zustimmung können wir Nutzungs-, Kauf- und Verlängerungsereignisse unseren Werbekampagnen zuordnen (Punkt 6.3). Ohne Ihre Zustimmung wird diese zusätzliche Werbezuordnung nicht eingerichtet. <strong>In der App wird keine Werbung angezeigt.</strong></li>
       <li><strong>Absturzberichte (Firebase Crashlytics):</strong> Auf Basis unseres berechtigten Interesses an der Erkennung und Behebung technischer Fehler (Art. 6 Abs. 1 lit. f DSGVO). Absturzberichte sind für die Stabilität und Sicherheit der App erforderlich und laufen daher unabhängig von den vorgenannten Einwilligungen.</li>
   </ul>
 
@@ -102,7 +103,7 @@
       Der Schutz Ihrer sensiblen Daten hat für uns höchste Priorität. Wir nutzen für den Betrieb der App die Infrastruktur der <strong>Google Cloud Platform</strong> sowie <strong>Google Firebase</strong>.
   </p>
   <p>
-      <strong>Standortbindung (Deutschland):</strong> Wir haben unsere Systeme technisch so konfiguriert, dass die dauerhafte Speicherung Ihrer personenbezogenen Daten (Datenbanken, Dokumente, Account-Daten) ausschließlich in Rechenzentren in <strong>Deutschland</strong> erfolgt.
+      <strong>Standortbindung unserer App-Datenbanken (Deutschland):</strong> Unsere Datenbanken für Dokumente und Benutzerkonten sind für die Speicherung in Rechenzentren in <strong>Deutschland</strong> konfiguriert. Diese Standortbindung gilt nicht pauschal für alle zusätzlich eingesetzten Dienste. Insbesondere verarbeitet RevenueCat technische Kunden-, Kauf- und Zuordnungsdaten in den USA; Einzelheiten zu Analysediensten, Empfängern und Drittlandübermittlungen finden Sie in den Punkten 6 bis 8.
   </p>
   <p>
       Verantwortlicher Anbieter der Cloud-Dienste ist Google Cloud EMEA Ltd. (Irland). Es besteht ein Vertrag zur Auftragsverarbeitung (Cloud Data Processing Addendum) gemäß Art. 28 DSGVO, der den Schutz Ihrer Daten nach europäischen Standards sicherstellt.
@@ -163,6 +164,7 @@
       <li><strong>Chat-Verläufe:</strong> Automatische Löschung nach <strong>12 Monaten</strong>. Sie können Ihre Chat-Verläufe jederzeit auch manuell in der App löschen.</li>
       <li><strong>Benutzerkonto und Account-Daten:</strong> Löschung bei Kontolöschung durch Sie oder automatisch nach <strong>24 Monaten Inaktivität</strong>.</li>
       <li><strong>Analytics-Daten (Amplitude):</strong> Pseudonymisierte Nutzungsdaten werden nach <strong>12 Monaten</strong> gelöscht.</li>
+      <li><strong>Zusätzliche Werbezuordnung über RevenueCat:</strong> Die Verknüpfung der Analytics-App-Instanz-ID mit dem RevenueCat-Kundenkonto wird bei Widerruf, Abmeldung oder Kontowechsel zur Entfernung an RevenueCat übermittelt. Die technische Umsetzung setzt eine Verbindung zum Dienst voraus. Bereits erhobene Ereignisse werden dadurch nicht rückwirkend gelöscht; für Löschanfragen gilt Punkt 9. Kauf- und Abonnementdaten, die für die Bereitstellung gekaufter Funktionen oder gesetzliche Pflichten erforderlich sind, bleiben davon getrennt und werden nur für die hierfür erforderliche Dauer aufbewahrt.</li>
       <li><strong>Absturzberichte (Firebase Crashlytics):</strong> Automatische Löschung nach <strong>90 Tagen</strong>.</li>
       <li><strong>Flüchtiger KI-Kontext-Cache bei Google (Vertex AI):</strong> Automatische Löschung spätestens nach <strong>24 Stunden</strong>; keine dauerhafte Speicherung, keine Ablage „at rest".</li>
   </ul>
@@ -180,7 +182,7 @@
       <li><strong>WICHTIG:</strong> Wir übermitteln an Amplitude <strong>keine</strong> Inhalte Ihrer Dokumente, keine Chat-Texte und keine sensiblen Personendaten. Es werden lediglich technische Ereignisse (Events) und pseudonyme IDs übertragen.</li>
       <li><strong>Speicherung in der EU:</strong> Wir haben Amplitude so konfiguriert, dass die erfassten Nutzungsdaten auf Servern in der <strong>Europäischen Union (Frankfurt am Main)</strong> gespeichert werden. Eine Speicherung dieser Daten in den USA findet somit nicht statt.</li>
       <li><strong>Widerspruchsrecht:</strong> Sie können der Erhebung von Nutzungsdaten durch Amplitude jederzeit widersprechen, indem Sie uns eine Nachricht an <a href="mailto:daniel.defiebre@gurusense.de">daniel.defiebre@gurusense.de</a> senden.</li>
-      <li><strong>Widerruf in der App:</strong> Am einfachsten widerrufen Sie Ihre Einwilligung direkt in der App unter „Profil &rarr; Datenschutz“. Die Erfassung wird dann sofort eingestellt.</li>
+      <li><strong>Datenschutzeinstellung in der App:</strong> Die dort angebotene Einwilligung steuert ausschließlich die zusätzliche Werbemessung nach Punkt 6.3. Sie schaltet die allgemeine Nutzungsanalyse nicht aus. Für einen Widerspruch gegen die Nutzungsanalyse gilt Punkt 6.4.</li>
   </ul>
 
   <h3>6.2. Google Firebase Analytics</h3>
@@ -192,24 +194,27 @@
       <li>Die Verarbeitung dient ausschließlich der Fehlersuche und der Verbesserung der App. Sie können ihr nach Punkt 6.4 widersprechen.</li>
   </ul>
 
-  <h3>6.3. Erfolgsmessung unserer Werbekampagnen (Google Ads)</h3>
+  <h3>6.3. Erfolgsmessung unserer Werbekampagnen (Google Ads, Google Analytics und RevenueCat)</h3>
   <p>
-      Wir bewerben unsere App über Anzeigen bei Google (z.B. im Google Play Store oder in der Google-Suche). Um zu erkennen, welche unserer Anzeigen tatsächlich hilfreich sind, müssen wir messen können, ob jemand nach dem Klick auf eine Anzeige die App installiert und genutzt hat.
+      Wir bewerben unsere App über Anzeigen bei Google (z.B. im Google Play Store oder in der Google-Suche). Mit Ihrer Einwilligung messen wir, welche Anzeigen zur Installation und Nutzung der App sowie zu Käufen und späteren Abonnementverlängerungen führen. Damit können wir die Kosten unserer Kampagnen mit den zugeordneten Zahlungen vergleichen.
   </p>
   <p>
       <strong>In der App selbst wird keine Werbung angezeigt.</strong> Es geht ausschließlich um die Erfolgsmessung unserer eigenen Kampagnen.
   </p>
   <ul>
-      <li><strong>Was übermittelt wird:</strong> Mit Ihrer Einwilligung übermittelt die App pseudonyme Nutzungsereignisse (z.B. erste Öffnung der App, abgeschlossener Kauf) sowie die Werbe-ID Ihres Geräts an Google Ads. Inhalte Ihrer Dokumente oder Chats werden <strong>niemals</strong> übermittelt.</li>
+      <li><strong>Google-Werbemessung:</strong> Mit Ihrer Einwilligung können pseudonyme Nutzungs- und Kaufereignisse für die Erfolgsmessung unserer Google-Ads-Kampagnen verwendet werden. Soweit vom Gerät und seinen Einstellungen zugelassen, kann dabei auch die Werbe-ID verwendet werden.</li>
+      <li><strong>Verknüpfung mit RevenueCat:</strong> Die App übermittelt die <strong>Firebase-Analytics-App-Instanz-ID</strong> an RevenueCat und verknüpft sie mit der dort geführten technischen Kundenkennung. Diese Kennung bezeichnet eine App-Installation; sie ist weder Ihr Name noch der Inhalt Ihrer Unterlagen. Sie ist pseudonym und nicht anonym.</li>
+      <li><strong>Kauf- und Abonnementereignisse:</strong> RevenueCat übermittelt zu dieser Zuordnung Ereignisse an Google Analytics, insbesondere Käufe, erste Zahlungen nach einer Probezeit und spätere Verlängerungen sowie weitere Abonnementereignisse wie Kündigungen oder Ablauf. Übermittelt werden technische Kunden- und Transaktionskennungen, Produkt, Ereigniszeitpunkt und Abonnementstatus sowie bei Zahlungen Betrag und Währung. Verlängerungsereignisse können auch übertragen werden, wenn Sie die App gerade nicht geöffnet haben. Google Analytics ordnet die Ereignisse der dort erfassten Nutzerakquise zu.</li>
+      <li><strong>Ausgeschlossene Inhalte:</strong> Für diese Werbemessung werden <strong>keine Inhalte Ihrer Briefe, Bescheide oder Chats</strong> übermittelt. Die zusätzliche Übermittlung gehashter E-Mail-Adressen für den Anzeigenabgleich ist deaktiviert.</li>
       <li><strong>Rechtsgrundlage:</strong> Ihre Einwilligung (Art. 6 Abs. 1 lit. a DSGVO, § 25 Abs. 1 TDDDG). Wir setzen hierfür den von Google vorgesehenen „Einwilligungsmodus“ (Consent Mode v2) ein: Ohne Ihre Zustimmung werden die Werbe-Signale technisch auf „verweigert“ gesetzt.</li>
-      <li><strong>Freiwillig und folgenlos:</strong> Ohne Ihre Zustimmung übermitteln wir nichts an Google Ads. Die App steht Ihnen in vollem Umfang zur Verfügung, unabhängig davon, wie Sie sich entscheiden.</li>
+      <li><strong>Freiwillig und folgenlos:</strong> Ohne Ihre Zustimmung wird die zusätzliche RevenueCat-Zuordnung für Werbemessung nicht eingerichtet; die Google-Werbesignale bleiben verweigert. Alle App-Funktionen bleiben verfügbar. Die allgemeine Nutzungsanalyse nach den Punkten 6.1 und 6.2 sowie die zur Bereitstellung Ihrer Käufe erforderliche Abonnementverwaltung sind davon unabhängig.</li>
       <li><strong>Keine personalisierte Werbung:</strong> Wir bilden mit diesen Daten keine Zielgruppen für personalisierte Anzeigen und nutzen sie nicht für Remarketing.</li>
       <li><strong>Werbe-ID zurücksetzen:</strong> Unabhängig von unserer App können Sie die Werbe-ID Ihres Geräts jederzeit in den Systemeinstellungen zurücksetzen oder löschen (Android: Einstellungen &rarr; Google &rarr; Anzeigen; iOS: Einstellungen &rarr; Datenschutz &amp; Sicherheit &rarr; Tracking).</li>
   </ul>
 
   <h3>6.4. Ihre Wahlmöglichkeiten</h3>
   <p>
-      <strong>Werbemessung (Punkt 6.3):</strong> Hierfür fragen wir Sie beim ersten Start der App. Die Einwilligung ist standardmäßig <strong>ausgeschaltet</strong> &ndash; ohne Ihre aktive Zustimmung übermitteln wir nichts an Google Ads. Eine Ablehnung hat keinerlei Nachteile für die Nutzung der App. Sie können Ihre Entscheidung jederzeit ändern: in der App unten auf der Startseite unter <strong>„Datenschutz“</strong> oder im Profil. Ein Widerruf wirkt ab sofort.
+      <strong>Werbemessung (Punkt 6.3):</strong> Hierfür fragen wir Sie nach dem Onboarding beim Ankommen in der App. Die Einwilligung ist standardmäßig <strong>ausgeschaltet</strong>. Eine Ablehnung hat keinerlei Nachteile für die Nutzung der App und wird gespeichert. Sie können Ihre Entscheidung jederzeit ändern oder widerrufen: unten auf der Startseite unter <strong>„Datenschutz“</strong>. Der Widerruf gilt für die Zukunft. Die App setzt die Google-Werbesignale auf verweigert und veranlasst die Entfernung der zusätzlichen RevenueCat-Zuordnung. Die Übermittlung an RevenueCat erfordert eine Netzwerkverbindung; bei Verbindungsproblemen kann sich die serverseitige Umsetzung verzögern. Bereits erfolgte Verarbeitungen bleiben vom Widerruf unberührt.
   </p>
   <p>
       <strong>Nutzungsanalyse (Punkte 6.1 und 6.2):</strong> Diese erfolgt auf Grundlage unseres berechtigten Interesses. Sie haben nach Art. 21 DSGVO das Recht, ihr jederzeit zu widersprechen. Senden Sie uns dazu eine Nachricht an <a href="mailto:daniel.defiebre@gurusense.de">daniel.defiebre@gurusense.de</a>; wir deaktivieren die Erfassung dann für Sie. Bereits erhobene Daten bleiben davon unberührt, können aber nach Punkt 9 gelöscht werden.
@@ -225,13 +230,14 @@
   <ul>
       <li><strong>Google Cloud / Google LLC</strong> (USA, zertifiziert unter dem EU-US Data Privacy Framework) – Cloud-Hosting, Firebase, Vertex AI, Speech-to-Text. Datenspeicherung in Deutschland (Hosting/Firebase), KI-Verarbeitung und Spracherkennung global (Vertex AI/Speech-to-Text), inklusive eines flüchtigen Kontext-Caches von maximal 24 Stunden in der jeweiligen Verarbeitungsregion.</li>
       <li><strong>Amplitude Inc.</strong> (EU-Rechenzentrum Frankfurt) – Nutzungsanalyse. Ausschließlich pseudonymisierte technische Daten, keine Inhalte. Rechtsgrundlage ist unser berechtigtes Interesse (Punkt 6.1).</li>
-      <li><strong>Google Ireland Limited</strong> (Gordon House, Barrow Street, Dublin 4, Irland) – Erfolgsmessung unserer Werbekampagnen über Google Ads. Übermittelt werden pseudonyme Nutzungsereignisse und die Werbe-ID des Geräts, keine Inhalte. Nur mit Ihrer gesonderten Einwilligung (Punkt 6.3). In der App wird keine Werbung angezeigt.</li>
+      <li><strong>Google Ireland Limited</strong> (Gordon House, Barrow Street, Dublin 4, Irland) – Erfolgsmessung unserer Werbekampagnen über Google Ads und Google Analytics. Hierzu gehören die mit Ihrer Einwilligung zugeordneten Nutzungs-, Kauf- und Abonnementereignisse sowie die in Punkt 6.3 beschriebenen Kennungen. Keine Dokument- oder Chatinhalte. In der App wird keine Werbung angezeigt.</li>
+      <li><strong>RevenueCat, Inc.</strong> (1032 E Brandon Blvd #3003, Brandon, FL 33511, USA) – Verwaltung von Käufen und Abonnements sowie, nur mit gesonderter Werbeeinwilligung, Verknüpfung der Analytics-App-Instanz-ID und Übermittlung der in Punkt 6.3 beschriebenen Ereignisse an Google Analytics. RevenueCat verarbeitet diese technischen Kunden- und Transaktionsdaten in den USA. Weitere Informationen: <a href="https://www.revenuecat.com/privacy">Datenschutzhinweise von RevenueCat</a> und <a href="https://www.revenuecat.com/dpa">Data Processing Addendum</a>.</li>
   </ul>
   <p>Eine darüber hinausgehende Weitergabe Ihrer personenbezogenen Daten an Dritte findet nicht statt, es sei denn, wir sind gesetzlich dazu verpflichtet.</p>
 
   <h2>8. Datenübermittlung in Drittländer</h2>
   <p>
-      Die dauerhafte Speicherung Ihrer personenbezogenen Daten (Datenbanken, Dokumente, Account-Daten) erfolgt ausschließlich in <strong>Deutschland</strong>. Für die KI-gestützte Analyse über Google Vertex AI kann jedoch eine <strong>Übermittlung in die USA</strong> oder andere Drittländer stattfinden (siehe Abschnitt 4.1).
+      Unsere App-Datenbanken für Dokumente und Benutzerkonten sind in <strong>Deutschland</strong> eingerichtet. Zusätzlich können bei den beschriebenen Diensten Daten außerhalb der EU verarbeitet werden. Dazu gehören die KI-Verarbeitung über Google Vertex AI (Punkt 4.1) sowie die Verarbeitung technischer Kunden-, Kauf- und Zuordnungsdaten durch RevenueCat in den <strong>USA</strong> (Punkte 6.3 und 7).
   </p>
   <p>
       Für diese Übermittlung stützen wir uns auf folgende Garantien:
@@ -239,6 +245,7 @@
   <ul>
       <li><strong>EU-US Data Privacy Framework (DPF):</strong> Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert, für das ein Angemessenheitsbeschluss der EU-Kommission gemäß Art. 45 DSGVO besteht.</li>
       <li><strong>EU-Standardvertragsklauseln (SCCs):</strong> Ergänzend sind im Google Cloud Data Processing Addendum EU-Standardvertragsklauseln gemäß Art. 46 Abs. 2 lit. c DSGVO enthalten, die als zusätzliche Schutzmaßnahme dienen.</li>
+      <li><strong>RevenueCat:</strong> Das <a href="https://www.revenuecat.com/dpa">Data Processing Addendum von RevenueCat</a> sieht für entsprechende Übermittlungen aus dem Europäischen Wirtschaftsraum EU-Standardvertragsklauseln vor. Diese regeln die Pflichten zum Schutz der übermittelten Daten. Informationen zu diesen Garantien können Sie über die unter Punkt 1 genannte Kontaktadresse anfordern.</li>
   </ul>
 
   <h2>9. Ihre Rechte als betroffene Person</h2>
@@ -269,7 +276,7 @@
       Wir behalten uns vor, diese Datenschutzerklärung anzupassen, um sie an geänderte Rechtslagen oder bei Änderungen des Dienstes anzupassen. Die aktuelle Fassung finden Sie stets in der App und auf unserer Website.
   </p>
 
-  <p class="legal-note">Stand: 03.09.2026</p>
+  <p class="legal-note">Stand: 01.10.2026</p>
 
 </body>
 </html>
